@@ -7,6 +7,16 @@ window.addEventListener('beforeunload', function (e) {
       e.returnValue = ''; // For some older browsers
   }
 });
+function Anura() {
+  var links = [
+    "https://anura.mathonline.click",
+    "https://anuran.mathonline.click",
+    "https://anurann.mathonline.click"
+  ];
+  var randomIndex = Math.floor(Math.random() * links.length);
+  window.location.href = links[randomIndex];
+}
+
 function HideButtons() {
     const buttons = document.querySelectorAll('button');
     buttons.forEach(button => {
@@ -48,7 +58,7 @@ function ProxyFullscreen() {
 }else if (proxyItem === 'hypertabs'){
   iframeUrl = 'https://math.math.mathonline.click';
 }else {
-        iframeUrl = 'https://math.mathonline.click';
+        iframeUrl = 'https://math.math.mathonline.click';
     }
     
     contentFrame.srcdoc = `
